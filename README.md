@@ -2,7 +2,7 @@
 
 Basic Meteor 1.3 with React using NPM
 
-download and run
+download and install npm packages:
 
 ```bash
 npm install
@@ -27,4 +27,3 @@ meteor add react-meteor-data
 ```
 
 In order to use above with es6 classes - look at the react-mixin package. However, this requires decorators which are not supported in meteor ecmascript at the moment so you'll have to edit the package to include them.
- 

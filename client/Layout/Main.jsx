@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMixin from 'react-mixin';
 
 export default class Main extends React.Component {
 
@@ -6,11 +7,19 @@ export default class Main extends React.Component {
     super(props);
   }
 
+  getMeteorData() {
+    return {
+      currentUser: Meteor.user()
+    };
+  }
+
   render() {
+    username = this.currentUser ? currentUser.profile.name : "No Name"
     return (
       <div>
-        Hello World!
+        Hello {username}
       </div>
     )
   }
 }
+ReactMixin(Main.prototype, ReactMeteorData);

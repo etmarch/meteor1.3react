@@ -14,7 +14,7 @@ export default class Main extends React.Component {
   }
 
   render() {
-    username = this.currentUser ? currentUser.profile.name : "No Name"
+      username = this.data.currentUser ? this.data.currentUser.username : "No Name"
     return (
       <div>
         Hello {username}

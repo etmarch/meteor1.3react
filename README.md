@@ -36,5 +36,3 @@ import reactMixin from 'react-mixin';
 reactMixin(<classname>.prototype, ReactMeteorData);
 ```
 
-
-In order to use above with es6 classes - look at the react-mixin package. However, this requires decorators which are not supported in meteor ecmascript at the moment so you'll have to edit the package to include them.
